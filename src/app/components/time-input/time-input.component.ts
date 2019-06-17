@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { InputToCountdownDirective } from 'src/app/directives/input-to-countdown.directive';
 
 @Component({
   selector: 'app-time-input',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeInputComponent implements OnInit {
 
-  constructor() { }
+  constructor(public d: InputToCountdownDirective) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
